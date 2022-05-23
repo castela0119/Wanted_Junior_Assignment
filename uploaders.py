@@ -7,10 +7,9 @@ django.setup()
 
 from apps.auto.models import Company
 
-
 CSV_PATH = './wanted_temp_data.csv'
 
-def insert_client():
+def insert_company():
 
     with open(CSV_PATH, newline='') as csvfile:
         rows = csv.DictReader(csvfile)
@@ -32,4 +31,4 @@ def insert_client():
         print('COMPANY DATA UPLOADED SUCCESSFULY!')
         
 
-insert_client()
+# insert_company()
