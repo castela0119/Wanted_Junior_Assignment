@@ -39,4 +39,6 @@ class AutoSearchAPI(APIView):
                     'word' : obj.company_ja
                 })
         
+        print("check1")
+
         return Response(data)
